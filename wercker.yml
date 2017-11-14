@@ -74,7 +74,7 @@
          code: |
            ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST sudo docker tag shobhanaidu/testing:latest shobhanaidu/testing:current
      - script:
-         name: Start all services/containers
+         name: Start all services/containers 
          code: |
            ssh $DEV_REMOTE_USER@$DEV_REMOTE_HOST sudo docker container run --detach -p 3333:80 --name ravi-linux shobhanaidu/testing:current
 
