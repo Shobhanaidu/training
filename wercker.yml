@@ -20,7 +20,7 @@
    after-steps:                    
      - slack-notifier:
          url: $SLACK_URL
-         username: saikrishna
+         username: shobz
          channel: 
  push-2-docker:
    box: nginx:latest
@@ -50,7 +50,7 @@
    box: node:latest
    steps:
      - wercker/add-ssh-key:
-         keyname: shoba_DOCKER_AWS
+         keyname: shoba
      - add-to-known_hosts:
          hostname: $DEV_REMOTE_HOST
      - script:
